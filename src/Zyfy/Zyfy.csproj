@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>10.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <PackageId>Zyfy</PackageId>
+    <Version>0.1.1</Version>
+    <Authors>Zyfy</Authors>
+    <Description>Official .NET client library for the Zyfy UK data enrichment API.</Description>
+    <RepositoryUrl>https://github.com/zyfy-uk/zyfy-dotnet</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>zyfy;uk;postcode;vehicle;data-enrichment</PackageTags>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>Zyfy.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+</Project>
